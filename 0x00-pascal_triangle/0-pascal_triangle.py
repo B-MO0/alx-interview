@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+Pascal's triangle by mohamed ballouchi.
+"""
 def pascal_triangle(n):
+    """
+    Generates Pascal triangle up to n number of rows.
+    """
     if n <= 0:
         return []
     
