@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" Determines if all "boxes" can be unlocked """
+"""Determines if all "boxes" can be unlocked"""
 
 
 def canUnlockAll(boxes):
-    """ Returns True if all boxes have reachable key """
+    """Returns True if all boxes have reachable key"""
     # Adds 0 to list
     key_list = [0]
     # Copies all keys in box 0
     test_key = boxes[0]
-    # Follow every key along its path opening boxes until can't anymore
+    # Follow every key along its path opening boxes
     # key is list of all available keys whether reachable or not
     for key in test_key:
         if key not in key_list:
